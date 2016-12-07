@@ -1,0 +1,22 @@
+{
+  "name": "webdriverio-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "java -jar selenium-server-standalone-3.0.1.jar",
+    "test": "wdio wdio.conf.js",
+    "start": "npm-run-all --parallel server test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "wdio-dot-reporter": "0.0.6",
+    "wdio-mocha-framework": "^0.5.4"
+  },
+  "dependencies": {
+    "npm-run-all": "^3.1.2"
+  }
+}

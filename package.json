@@ -1,0 +1,26 @@
+{
+  "name": "webdriver-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-webdriver": "^1.0.3",
+    "mocha": "^3.2.0",
+    "phantomjs": "^2.1.7",
+    "selenium-standalone": "^6.1.0",
+    "webdriverio": "^3.4.0"
+  },
+  "scripts": {
+    "start:driver": "selenium-standalone start",
+    "config": "wdio config",
+    "install:firefox": "selenium-standalone install",
+    "install:chrome": "selenium-standalone install --drivers.chrome.version=2.15 --drivers.chrome.baseURL=https://chromedriver.storage.googleapis.com",
+    "install:ie": "selenium-standalone install --drivers.chrome.version=2.15 --drivers.chrome.baseURL=https://chromedriver.storage.googleapis.com",
+    "test": "gulp runTest",
+    "postinstall": "install:chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

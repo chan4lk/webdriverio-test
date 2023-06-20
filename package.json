@@ -17,6 +17,6 @@
     "wdio-mocha-framework": "^0.5.4"
   },
   "dependencies": {
-    "npm-run-all": "^3.1.2"
+    "npm-run-all": "^4.0.0"
   }
 }
